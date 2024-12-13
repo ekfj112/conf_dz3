@@ -1,0 +1,12 @@
+let initial_x = 0.5;
+let initial_y = 1.0;
+let step_size = 0.001;
+{
+  method -> gradient_descent.
+  max_iterations -> 1000.
+  tolerance -> |step_size / 10|.
+}
+(MSE RMSE MAE)
+{
+  results -> .
+}

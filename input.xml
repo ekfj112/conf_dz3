@@ -1,0 +1,23 @@
+<config>
+    <let name="initial_x">0.5</let>
+    <let name="initial_y">1.0</let>
+    <let name="step_size">|pow(10, -3)|</let>
+    <dict>
+        <entry key="method">gradient_descent</entry>
+        <entry key="max_iterations">1000</entry>
+        <entry key="tolerance">|step_size / 10|</entry>
+    </dict>
+    <array>
+        MSE
+        RMSE
+        MAE
+    </array>
+    <dict>
+        <entry key="results">
+            <dict>
+                <entry key="x_final">|initial_x + step_size|</entry>
+                <entry key="y_final">|initial_y - step_size|</entry>
+            </dict>
+        </entry>
+    </dict>
+</config>
